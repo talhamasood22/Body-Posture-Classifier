@@ -40,7 +40,6 @@ laying_frames = []
 standing_frames = []
 sitting_frames = []
 
-
 for file_name in os.listdir("Dataset/laying"):
     file_path = os.path.join("Dataset/laying", file_name)
     laying_frames.append(extract_frames_to_array(file_path))
@@ -52,6 +51,5 @@ for file_name in os.listdir("Dataset/Sitting"):
 for file_name in os.listdir("Dataset/Standing"):
     file_path = os.path.join("Dataset/Standing", file_name)
     standing_frames.append(extract_frames_to_array(file_path))
-
 
 print(laying_frames)
